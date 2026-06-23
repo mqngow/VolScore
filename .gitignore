@@ -1,0 +1,13 @@
+# Environments
+.venv/
+venv/
+ENV/
+
+# Project-specific MIDI test files
+test_midi/
+
+# Python cache / logs
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
