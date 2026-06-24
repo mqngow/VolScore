@@ -35,7 +35,9 @@ Before diving into the roadmap, here are the best tools available for reading an
     *   *Note Density:* Count notes per measure or notes per second.
     *   *Spread/Reach:* Calculate the maximum interval (distance) between the highest and lowest note played simultaneously by one hand.
     *   *Speed:* Find the shortest note durations or fastest consecutive note sequences.
-    *   *Hand Independence:* Analyze how often rhythms in the left and right hands conflict (polyrhythms or syncopation).
+    *   *Hand Independence/(One hand):* Analyze how often rhythms in the left and right hands conflict (polyrhythms or syncopation).
+    *   *Leaps:* Calculate the average and maximum distance (in semitones) between consecutive notes.
+    *   *Complexity/(Tricky):* Frequent time signature changes, complex subdivisions such as triplets, quintuplets, etc.
 *   **Task:** Output a JSON object or dictionary with the raw numerical values for a specific song.
 
 ### Phase 3: The Scoring System
@@ -63,10 +65,3 @@ Before diving into the roadmap, here are the best tools available for reading an
 **Goal:** Accept PDF sheet music.
 *   **Task:** Integrate an OMR pipeline (like Audiveris).
 *   **Task:** When a user uploads a PDF, route it through the OMR to generate a temporary MusicXML file, and then feed that XML file into your Phase 1 pipeline. You will need to handle errors gracefully here, as OMR is rarely 100% accurate.
-
-## Next Steps
-
-To begin immediately, I recommend starting with **Phase 1**.
-Set up a Python environment and install `music21`. Try to write a script that takes a simple MIDI file and just counts the total number of notes.
-
-Let me know if you would like me to set up a starter Python project for Phase 1 to get you going!
